@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tez Browser</string>
+    <string name="linkhint">Search or type web address</string>
+
+
+    <string name="Banner">Banner Advt.</string>
+    <string name="Interstial">Interstial Advt.</string>
+    <string name="Exit">Exit</string>
+    <string name="link">Search or type web address</string>
+
+
+    <!-- AdMob ad unit IDs -->
+    <string name="admob_app_id">ca-app-pub-9880407824118549~8942235115</string>
+    <string name="banner_splash_footer">ca-app-pub-9880407824118549/6086763649</string>
+    <string name="banner_home_footer">ca-app-pub-9880407824118549/5047222130</string>
+    <string name="interstitial_full_screen">ca-app-pub-9880407824118549/9792992795</string>
+    <string name="rewarded_video">ca-app-pub-9880407824118549/6270596470</string>
+    <string name="version">Version 2.0.0</string>
+</resources>

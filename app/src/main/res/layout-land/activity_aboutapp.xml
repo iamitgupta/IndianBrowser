@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutapp"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="425dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/drawerlogo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:textColor="#f50808"
+        android:textStyle="bold"
+        android:text="Tez Browser " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_weight="1"
+        android:text="Made in India "
+        android:textColor="#33ef1b"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="21dp"
+        android:layout_weight="1"
+        android:text="@string/version"
+        android:textColor="#151414"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

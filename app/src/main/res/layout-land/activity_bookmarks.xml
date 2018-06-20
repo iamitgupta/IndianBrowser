@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookmarks"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/google" />
+
+    <EditText
+        android:id="@+id/et_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="72dp"
+        android:layout_weight="9"
+        android:ems="10"
+        android:hint="@string/linkhint"
+        android:imeOptions="actionGo"
+        android:inputType="textWebEditText"
+        android:selectAllOnFocus="true"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/lin_hor1"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_link"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_fb"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/facebook"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/bt_google"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/search"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_gmail"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/gmail"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_twitter"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/twitter"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_flipkart"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/flipkart"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_amazon"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/amazon"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_hor2"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lin_hor1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/bt_myntra"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/myntra"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_shopclues"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shopclues"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_insta"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/instagram"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_youtube"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/youtube"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_paytm"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/paytm"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_mp3"
+            android:layout_width="10dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/mp3"
+            android:padding="5dp" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/BadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="11dp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9880407824118549/5047222130"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+
+</RelativeLayout>

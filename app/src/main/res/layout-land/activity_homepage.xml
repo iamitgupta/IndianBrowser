@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/purple"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_link"
+            android:layout_width="526dp"
+            android:layout_height="50dp"
+            android:layout_weight="9"
+            android:ems="10"
+            android:hint="@string/linkhint"
+            android:imeOptions="actionGo"
+            android:privateImeOptions="action.com"
+            android:selectAllOnFocus="true"
+            android:textSize="25sp"
+            android:inputType="textUri"
+            android:paddingBottom="1dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:paddingTop="1dp"
+            android:maxLines="1"
+            android:background="@color/white"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/bt_option"
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="3dp"
+            android:layout_weight="0.1"
+            android:background="@mipmap/newoption" />
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:max="100"
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:theme="@style/AppTheme"
+        android:layout_below="@+id/action_bar"
+        />
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pb"
+        android:focusedByDefault="true"
+        />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/BadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9880407824118549/5047222130"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="469dp"
+
+        />
+
+</RelativeLayout>
